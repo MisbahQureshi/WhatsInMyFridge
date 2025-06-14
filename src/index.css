@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #fafafa;
   color: #333;
 }
@@ -11,11 +11,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  color: #FF6B00;
+  color: #ff6b00;
   margin: 0;
   font-weight: 700;
   font-size: 28px;
@@ -33,7 +33,7 @@ header h1 {
   background: #fff;
   padding: 50px 40px;
   border-radius: 16px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 400px;
 }
@@ -84,7 +84,6 @@ header h1 {
   color: #ff5722;
 }
 
-
 .user-icon {
   font-size: 20px;
   border: 1px solid #ddd;
@@ -103,7 +102,7 @@ header h1 {
   top: 40px;
   right: 0;
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 10px;
   z-index: 1000;
@@ -126,7 +125,6 @@ header h1 {
   background: #ffe9e1;
   color: #ff5722;
 }
-
 
 /* MAIN ORANGE BUTTON */
 .main-button {
@@ -151,7 +149,7 @@ header h1 {
 }
 
 .button {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -175,7 +173,7 @@ header h1 {
   background: #fff;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
 }
 
@@ -220,7 +218,7 @@ input[type="text"] {
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card img {
@@ -274,3 +272,17 @@ input[type="text"] {
   margin-left: 4px;
 }
 
+.save-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  padding: 0;
+}
+
+.save-icon-button:hover {
+  transform: scale(1.1);
+}

@@ -3,12 +3,12 @@ import IngredientSelector from "./IngredientSelector";
 import RecipeCard from "./RecipeCard";
 import axios from "axios";
 
-const Home = () => {
+const Home = ({ onToggleSave, savedRecipes }) => {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const SPOONACULAR_API_KEY = "mykey";
+  const SPOONACULAR_API_KEY = "key";
 
   const fetchRecipes = async () => {
     if (selectedIngredients.length === 0) return;
@@ -46,7 +46,12 @@ const Home = () => {
       <div className="recipes-section">
         <h2>Recipes</h2>
         {recipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
+          <RecipeCard
+            key={recipe.id}
+            recipe={recipe}
+            onToggleSave={onToggleSave}
+            savedRecipes={savedRecipes}
+          />
         ))}
       </div>
     </div>
