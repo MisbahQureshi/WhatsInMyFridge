@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import IngredientSelector from "./IngredientSelector";
 import RecipeCard from "./RecipeCard";
+import ChatSuggestion from "./ChatSuggestion";
 import axios from "axios";
 
 const Home = ({ onToggleSave, savedRecipes }) => {
@@ -40,7 +41,7 @@ const Home = ({ onToggleSave, savedRecipes }) => {
         setSelectedIngredients={setSelectedIngredients}
         fetchRecipes={fetchRecipes}
       />
-
+      <ChatSuggestion />
       {loading && <p className="loading-text">Loading recipes...</p>}
 
       <div className="recipes-section">
