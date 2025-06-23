@@ -41,7 +41,8 @@ const Home = ({ onToggleSave, savedRecipes }) => {
         setSelectedIngredients={setSelectedIngredients}
         fetchRecipes={fetchRecipes}
       />
-      <ChatSuggestion />
+      <div style={{ marginTop: "20px" }}><ChatSuggestion /></div>
+      
       {loading && <p className="loading-text">Loading recipes...</p>}
 
       <div className="recipes-section">
