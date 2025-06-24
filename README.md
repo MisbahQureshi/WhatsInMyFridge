@@ -1,71 +1,119 @@
-# Getting Started with Create React App
+# 🥦 What's in My Fridge (a.k.a. Fresh Picks)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A smart recipe suggestion web app that helps users decide *"What should I cook today?"* based on what’s already in their fridge. Users can select ingredients they currently have, and the app provides real-time recipe suggestions using AI and the Spoonacular API. Built with modern web technologies, authenticated via Google Login, and deployed with AWS Amplify.
 
-## Available Scripts
+> Developed by Misbah Qureshi
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 [Try it now on AWS Amplify](https://main.d2iyquvybx2yj7.amplifyapp.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 Project Motivation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As a student managing both studies and daily life, meal planning can become overwhelming. This app was born to simplify that decision by suggesting easy-to-cook meals using ingredients already available at home.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:** React.js
+- **Routing:** React Router DOM
+- **Authentication:** Firebase (Google Login)
+- **Recipe API:** Spoonacular API
+- **AI:** ChatGPT-4o (OpenAI) for code generation and assistance
+- **Hosting + CI/CD:** AWS Amplify
+- **Version Control:** Git + GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ✨ Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ✅ **Google Login** via Firebase
+- ✅ **Ingredient Selector**: Choose from checkboxes or type custom ingredients
+- ✅ **Live Recipe Suggestions** using Spoonacular API
+- ✅ **Bookmark Recipes** with Save/Unsave toggle
+- ✅ **Saved Recipes Page** to view favorites
+- ✅ **Ask Ai for More Customized Recipe Suggestions** to view favorites
+- ✅ **Responsive UI** with clean navigation and dropdown profile menu
+- ✅ **Secure API Keys** via Amplify environment variables
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Installation Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project locally:
 
-## Learn More
+```bash
+git clone https://github.com/MisbahQureshi/whats-in-my-fridge.git
+cd whats-in-my-fridge
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start` – Launch dev server
+- `npm run build` – Create optimized production build
+- `npm test` – Run test suite
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📈 Development Timeline (Highlights)
 
-### Making a Progressive Web App
+### Week 1
+- Built basic React UI with ingredient selection and Spoonacular integration
+- Set up Google Login via Firebase
+- Displayed recipe cards with missing/used ingredient details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Week 2
+- Redesigned UI for a modern, clean layout
+- Implemented React Router navigation
+- Added hover effects and dropdown profile/logout
 
-### Advanced Configuration
+### Week 3
+- Added “Save to Recipes” bookmarking with visual icon toggle
+- Created `/recipes` page to show saved items
+- Refined state sharing and routing logic
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Week 4
+- Integrated Ai Recipe Suggestions 
+- Deployed full app to AWS Amplify
+- Configured Firebase auth domains and Amplify environment variables
+- Debugged deployment issues (axios, node version, domain)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🧠 AI Collaboration
 
-### `npm run build` fails to minify
+ChatGPT-4o was used extensively for:
+- UI improvements (CSS, layout)
+- Debugging React/Amplify integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# SU25_MCI_recipe
+## 📌 Future Plans
+
+- Add **Meal Planner** feature
+- Add **Grocery Generator** feature
+- Enable persistent recipe saving using Firebase Firestore
+
+---
+
+## 🙌 Acknowledgements
+
+- [Spoonacular API](https://spoonacular.com/food-api)
+- [Firebase Authentication](https://firebase.google.com/)
+- [AWS Amplify Hosting](https://docs.amplify.aws/)
+- [ChatGPT by OpenAI](https://openai.com/)
+
+---
+
+## 🧾 License
+
+This project is for academic use and demonstration purposes. Free to explore, fork, and build upon!
